@@ -1,0 +1,190 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-27T20:05:56.335Z",
+        "line": 12,
+        "name": "Order a Tshirt and verify order history",
+        "description": "",
+        "id": "online-shopping-website;order-a-tshirt-and-verify-order-history;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 789249100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.raj.stepDefinition.Steps.closeSession()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13512978800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "com.test.raj.stepDefinition.Steps.the_user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4176802100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user logs in with rajkumar@qualitest.com Test123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rajkumar@qualitest.com",
+                  "offset": 22
+                },
+                {
+                  "val": "Test123",
+                  "offset": 45
+                }
+              ],
+              "location": "com.test.raj.stepDefinition.Steps.the_user_is_logs_in_with_and_(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027center_column\u0027]/div\"}\n  (Session info: chrome\u003d90.0.4430.212)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DESKTOP-84AR3MC\u0027, ip: \u0027192.168.1.222\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir\u003dC:\\Users\\Rajkumar\\AppData\\Local\\Temp\\scoped_dir2764_1730695021}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57338}, acceptInsecureCerts\u003dfalse, browserVersion\u003d90.0.4430.212, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 36a1e7d462e23d9f59aaa75fadcbac48\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027center_column\u0027]/div}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat com.test.raj.pages.ProductPage_Tshirt.getOrderID(ProductPage_Tshirt.java:48)\r\n\tat com.test.raj.stepDefinition.Steps.the_user_orders_a_tshirt(Steps.java:50)\r\n\tat ✽.the user orders a tshirt(file:///C:/Users/Rajkumar/Selenium/SeleniumWithBDD/src/test/resources/features/Testcases.feature:7)\r\n",
+              "duration": 31506114400,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "the user orders a tshirt",
+            "match": {
+              "location": "com.test.raj.stepDefinition.Steps.the_user_orders_a_tshirt()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the order should be available in the order history table.",
+            "match": {
+              "location": "com.test.raj.stepDefinition.Steps.the_order_should_be_available_in_the_order_history_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@order_tshirt"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T20:06:46.491Z",
+        "line": 23,
+        "name": "Update first name in personal information screen",
+        "description": "",
+        "id": "online-shopping-website;update-first-name-in-personal-information-screen;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 767520200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.raj.stepDefinition.Steps.closeSession()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18919260500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "com.test.raj.stepDefinition.Steps.the_user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#email\"}\n  (Session info: chrome\u003d90.0.4430.212)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027DESKTOP-84AR3MC\u0027, ip: \u0027192.168.1.222\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}), userDataDir\u003dC:\\Users\\Rajkumar\\AppData\\Local\\Temp\\scoped_dir12484_1137393434}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dXP, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57402}, acceptInsecureCerts\u003dfalse, browserVersion\u003d90.0.4430.212, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 523348cf63c75669bc7b955036015b96\n*** Element info: {Using\u003did, value\u003demail}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\r\n\tat com.test.raj.stepDefinition.Steps.the_user_is_logs_in_with_and_(Steps.java:33)\r\n\tat ✽.the user logs in with rajkumar@qualitest.com Test123(file:///C:/Users/Rajkumar/Selenium/SeleniumWithBDD/src/test/resources/features/Testcases.feature:17)\r\n",
+              "duration": 10570358700,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "the user logs in with rajkumar@qualitest.com Test123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rajkumar@qualitest.com",
+                  "offset": 22
+                },
+                {
+                  "val": "Test123",
+                  "offset": 45
+                }
+              ],
+              "location": "com.test.raj.stepDefinition.Steps.the_user_is_logs_in_with_and_(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2030900,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "the user updates the first name as Raj Updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raj Updated",
+                  "offset": 35
+                }
+              ],
+              "location": "com.test.raj.stepDefinition.Steps.the_user_updates_the_first_name_on_the_personal_information_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "the information should be updated successfully.",
+            "match": {
+              "location": "com.test.raj.stepDefinition.Steps.the_information_should_be_updated_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update_firstname"
+          }
+        ]
+      }
+    ],
+    "name": "Online shopping website",
+    "description": "",
+    "id": "online-shopping-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Testcases.feature",
+    "tags": []
+  }
+]
