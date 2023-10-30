@@ -6,6 +6,7 @@ on:
       user_input:
         description: 'Enter some input'
         required: true
+        default: 'Hello world'
 
   push:
     branches:
@@ -14,10 +15,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    inputs:
-      user_input:
-        description: 'Enter some input'
-        required: true
         
     steps:
     - name: Check out code
