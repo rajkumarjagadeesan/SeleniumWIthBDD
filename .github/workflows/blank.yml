@@ -6,19 +6,24 @@ on:
       user_input:
         description: 'Enter some input'
         required: true
-        default: 'Hello world'
+        default: 'Hello World'
 
   push:
     branches:
-      - main
+      - main # Adjust the branch as needed
 
 jobs:
   build:
     runs-on: ubuntu-latest
-        
+
     steps:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Use manual input
-      run: echo ${{ inputs.user_input }}
+    - name: Store user input
+      if: github.event_name == 'workflow_dispatch'
+      run: echo "${{ github.event.inputs.user_input }}" > user_input.txt
+
+    - name: Use stored input
+      if: github.event_name == 'push'
+      run: echo "This is a push event"
