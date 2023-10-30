@@ -21,4 +21,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Use manual input
-      run: echo ${{ github.event.inputs.user_input }}
+      run: echo ${{ inputs.user_input }}
