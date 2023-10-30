@@ -1,0 +1,27 @@
+name: Custom Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      user_input:
+        description: 'Enter some input'
+        required: true
+
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    inputs:
+      user_input:
+        description: 'Enter some input'
+        required: true
+        
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Use manual input
+      run: echo ${{ github.event.inputs.user_input }}
